@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Fragment } from 'react';
+import TemplatesGenerator from './components/templates/TemplateGenerator';
+import TemplateHome from './components/templates/TemplateHome';
+import TemplateRandomQuote from './components/templates/TemplateRandomQuote';
+import Format from './components/layout/Format';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Format children={
+          <BrowserRouter>
+            <Routes>
+              <Route path='/' element={<TemplateHome />} />
+              <Route path='/qr-code' element={<TemplatesGenerator />} />
+              <Route path='/random-quote' element={<TemplateRandomQuote />} />
+            </Routes>
+          </BrowserRouter>
+      } />
+    </Fragment>
   );
 }
 
