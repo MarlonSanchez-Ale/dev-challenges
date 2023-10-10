@@ -5,6 +5,7 @@ import { BsQrCode, BsQuote } from "react-icons/bs";
 import { useNavigate } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
+
 export default function TemplateHome() {
 
     const navigate = useNavigate()
@@ -28,7 +29,6 @@ export default function TemplateHome() {
                     Try some of my DevChalenge projects
                 </Typography>
             </div>
-
             <div className="grid place-items-center grid-cols-3 gap-10 p-10">
                 <div
                     className="flex flex-row justify-between gap-5 w-full bg-white p-5 rounded-lg shadow-lg cursor-pointer hover:bg-gray-100 hover:-translate-y-2"

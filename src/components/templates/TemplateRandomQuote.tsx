@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import RandomQuote from '../modules/RandomQuote'
 import FormRandomQuote from '../modules/FormRandomQuote'
 import { QuoteRandom } from '../../interfaces/QuoteRandom'

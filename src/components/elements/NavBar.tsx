@@ -7,6 +7,7 @@ import {
     IconButton,
 } from "@material-tailwind/react";
 import { BiBot } from 'react-icons/bi'
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
 
@@ -23,13 +24,12 @@ export default function NavBar() {
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             <Typography
                 as="li"
-                variant="small"
-                color="blue-gray"
+                color="white"
                 className="p-1 font-normal"
             >
-                <a href="/" className="flex items-center">
+                <Link to={'/'} aria-current="page" className="flex items-center">
                     Home
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -37,9 +37,9 @@ export default function NavBar() {
                 color="blue-gray"
                 className="p-1 font-light"
             >
-                <a href="/qr-code" className="flex items-center">
+                <Link to="/qr-code" aria-current="page" className="flex items-center">
                     Qr Code
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -47,9 +47,9 @@ export default function NavBar() {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <a href="/random-quote" className="flex items-center">
+                <Link to="/random-quote" aria-current="page" className="flex items-center">
                     Random Quote
-                </a>
+                </Link>
             </Typography>
             <Typography
                 as="li"
@@ -57,9 +57,9 @@ export default function NavBar() {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <a href="/" className="flex items-center">
+                <Link to="/" aria-current="page" className="flex items-center">
                     Personal Portfolio
-                </a>
+                </Link>
             </Typography>
         </ul>
     );
@@ -75,7 +75,7 @@ export default function NavBar() {
                         </div>
                         <Typography
                             as="a"
-                            href="#"
+                            href="/"
                             className="mr-4 cursor-pointer mt-3 font-bold"
                         >
                             Marlon Sánchez
