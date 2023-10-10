@@ -1,15 +1,17 @@
 .App {
   text-align: center;
-  
+
 }
 
 .DivRandomQuote {
-  background-image: url('/public/images/bg-image-random-quote.svg');
+  background-image: linear-gradient(rgba(37, 39, 39, 0.5),
+      rgba(62, 61, 67, 0.5)),
+    url('/public/images/bg-image-random-quote.svg');
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: bottom;
-  opacity:initial;
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -41,6 +43,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
