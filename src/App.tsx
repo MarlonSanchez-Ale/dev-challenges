@@ -4,7 +4,7 @@ import TemplatesGenerator from './components/templates/TemplateGenerator';
 import TemplateHome from './components/templates/TemplateHome';
 import TemplateRandomQuote from './components/templates/TemplateRandomQuote';
 import Format from './components/layout/Format';
-import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
