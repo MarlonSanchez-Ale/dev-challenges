@@ -57,8 +57,8 @@ export default function NavBar() {
                 color="blue-gray"
                 className="p-1 font-normal"
             >
-                <Link to="/" aria-current="page" className="flex items-center">
-                    Personal Portfolio
+                <Link to="/Multi-Step-Form" aria-current="page" className="flex items-center">
+                    Multi-Step Form
                 </Link>
             </Typography>
         </ul>
