@@ -26,8 +26,7 @@ export default function NavBar() {
         <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
             <Typography
                 as="li"
-                color="white"
-                className="p-1 font-normal"
+                className="p-1 font-normal hover:text-gray-600"
             >
                 <Link to={'/'} aria-current="page" className="flex items-center">
                     Home
@@ -36,8 +35,7 @@ export default function NavBar() {
             <Typography
                 as="li"
                 variant="small"
-                color="blue-gray"
-                className="p-1 font-light"
+                className="p-1 font-light hover:text-gray-600"
             >
                 <Link to="/qr-code" aria-current="page" className="flex items-center">
                     Qr Code
@@ -46,8 +44,7 @@ export default function NavBar() {
             <Typography
                 as="li"
                 variant="small"
-                color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal hover:text-gray-600"
             >
                 <Link to="/random-quote" aria-current="page" className="flex items-center">
                     Random Quote
@@ -56,8 +53,7 @@ export default function NavBar() {
             <Typography
                 as="li"
                 variant="small"
-                color="blue-gray"
-                className="p-1 font-normal"
+                className="p-1 font-normal hover:text-gray-600"
             >
                 <Link to="/Multi-Step-Form" aria-current="page" className="flex items-center">
                     Multi-Step Form
