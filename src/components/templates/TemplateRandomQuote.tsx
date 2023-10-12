@@ -26,7 +26,7 @@ export default function TemplateRandomQuote() {
   }, [])
 
   return (
-    <div className='grid place-items-center p-32'>
+    <div className='grid place-items-center sm:mt-5 sm:p-5 lg:my-10'>
       <RandomQuote quote={quote} error={error} />
       <FormRandomQuote handleQuoteRandom={handleRandomQuote} content={quote?.content} author={quote?.author} />
     </div>

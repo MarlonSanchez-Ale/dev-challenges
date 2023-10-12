@@ -26,7 +26,7 @@ export default function TemplatesGenerator() {
 
 
   return (
-    <div className={`App p-5 flex flex-col gap-10`} >
+    <div className={`App p-5 `} >
       {!showQr && (<SearchPage qrcode={qrcode} handleChange={handleChange} handleSubmit={handleSubmit} />)}
       {showQr && (<QRCodePage qrcode={qr} handleShowQr={handleShowQr} />)}
     </div>

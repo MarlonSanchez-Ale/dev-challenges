@@ -6,7 +6,7 @@ export const InputGenerator = ({ qrcode, handleChange, handleSubmit }: Props) =>
 
 
     return (
-        <form className="relative flex w-full max-w-[24rem] text-white bg-blue-900/10 " onSubmit={handleSubmit}>
+        <form className=" flex w-full max-w-[24rem] text-white bg-blue-900/10 sm:absolute lg:relative " onSubmit={handleSubmit}>
             <Input
                 type='url'
                 value={qrcode}

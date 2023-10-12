@@ -12,7 +12,7 @@ export default function RandomQuote({ quote, error }: Props) {
     return (
         <>
             {quote && (
-                <div className="DivRandomQuote flex flex-col justify-center gap-5 p-20 rounded-lg shadow-lg">
+                <div className="DivRandomQuote flex flex-col justify-center text-center gap-5 rounded-lg shadow-lg sm:p-5 lg:p-20">
                     <div className='flex flex-col justify-center gap-3'>
                         <Typography variant="h5" className='text-center' color='white'>{quote.author}</Typography>
                         <div className='flex flex-row justify-center gap-5'>
@@ -21,7 +21,9 @@ export default function RandomQuote({ quote, error }: Props) {
                         </div>
                     </div>
 
-                    <Typography className='text-gray-300 font-semibold'>"{quote.content}"</Typography>
+                    <div className='w-80'>
+                        <Typography variant='paragraph' className='text-gray-300'>"{quote.content}"</Typography>
+                    </div>
                 </div>
             )}
             {!quote && (

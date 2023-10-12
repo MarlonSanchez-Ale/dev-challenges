@@ -57,7 +57,7 @@ export default function QRCodePage({ qrcode, handleShowQr }: Props) {
 
 
   return (
-    <div className='flex flex-col justify-center gap-5 mt-20'>
+    <div className='flex flex-col justify-center gap-5 mt-20 '>
       {qrcode && (
         <>
           <div className="flex justify-center relative w-full">
@@ -75,16 +75,16 @@ export default function QRCodePage({ qrcode, handleShowQr }: Props) {
             </div>
           </div>
 
-          <div className="flex flex-row justify-center gap-5">
-            <Button className="flex items-center gap-3 bg-blue-700 shadow-lg" onClick={() => handleShowQr()}>
+          <div className="flex justify-center gap-5 sm:flex-col lg:flex-row">
+            <Button className="flex items-center gap-3 bg-blue-700 shadow-lg hover:bg-blue-800 hover:-translate-y-1" onClick={() => handleShowQr()}>
               <AiOutlineRetweet size={20} />
-              Download
+              Generator
             </Button>
-            <Button className="flex items-center gap-3 bg-blue-700 shadow-lg" onClick={() => downloadQRCode()}>
+            <Button className="flex items-center gap-3 bg-blue-700 shadow-lg hover:bg-blue-800 hover:-translate-y-1" onClick={() => downloadQRCode()}>
               <AiOutlineDownload size={20} />
               Download
             </Button>
-            <Button className="flex items-center gap-3 bg-blue-700 shadow-md" onClick={() => handleShareQRCode()}>
+            <Button className="flex items-center gap-3 bg-blue-700 shadow-md hover:bg-blue-800 hover:-translate-y-1" onClick={() => handleShareQRCode()}>
               <AiOutlineLink size={20} />
               Share
             </Button>
