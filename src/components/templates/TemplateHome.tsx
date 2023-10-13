@@ -33,7 +33,7 @@ export default function TemplateHome() {
 
     return (
         <motion.div
-            className='Box flex flex-col justify-center gap-10 sm:my-10 lg:my-32 '
+            className='Box flex flex-col justify-center gap-10 sm:my-10 lg:my-20 '
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{

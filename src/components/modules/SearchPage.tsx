@@ -4,7 +4,7 @@ import { Typography } from "@material-tailwind/react";
 
 export default function SearchPage({ qrcode, handleChange, handleSubmit }: Props) {
   return (
-    <div className='grid place-items-center gap-5 p-28'>
+    <div className='grid place-items-center gap-5 p-5'>
       <div className="flex flex-col justify-center sm:gap-28 lg:gap-3">
         <img
           className="h-20 w-52 "

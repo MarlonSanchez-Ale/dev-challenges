@@ -92,7 +92,7 @@ function TemplateMultiStepForm() {
 	}
 	//h-screen flex flex-col text-neutral-cool-gray w-full p-10 my-10 rounded-lg shadow-xl bg-blue-400/20 lg:mx-auto lg:max-w-[58.75rem]  lg:flex-row grow lg:h-[33.75rem]
 	return (
-		<div className='grid place-items-center sm:p-2 sm:my-10 lg:my-2 lg:p-10'>
+		<div className='grid place-items-center p-2 sm:my-10 lg:my-2 '>
 			<div className="flex flex-row p-10 rounded-lg shadow-2xl bg-blue-500/10 sm:p-5 sm:h-full lg:mx-auto lg:max-w-[58.75rem]  lg:flex-row grow lg:h-[33.75rem] sm:flex-col sm:gap-5">
 				<Sidebar currentStep={step} handleNextStep={nextStep} />
 				<div className=" relative bg-neutral-magnolia  lg:bg-transparent lg:flex lg:flex-col lg:w-full ">
